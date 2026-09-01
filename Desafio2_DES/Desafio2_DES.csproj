@@ -8,6 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.11" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.17.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Desafio2_DES.BL\Desafio2_DES.BL.csproj" />
+    <ProjectReference Include="..\Desafio2_DES.Common\Desafio2_DES.Common.csproj" />
+    <ProjectReference Include="..\Desafio2_DES.Entities\Desafio2_DES.Entities.csproj" />
   </ItemGroup>
 
 </Project>

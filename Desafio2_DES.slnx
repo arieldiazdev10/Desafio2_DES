@@ -1,3 +1,7 @@
 <Solution>
+  <Project Path="Desafio2_DES.BL/Desafio2_DES.BL.csproj" />
+  <Project Path="Desafio2_DES.Common/Desafio2_DES.Common.csproj" />
+  <Project Path="Desafio2_DES.DAL/Desafio2_DES.DAL.csproj" />
+  <Project Path="Desafio2_DES.Entities/Desafio2_DES.Entities.csproj" />
   <Project Path="Desafio2_DES/Desafio2_DES.csproj" />
 </Solution>
