@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="APIGateway_Desafio2/APIGateway_Desafio2.csproj" Id="80f68403-06d0-4435-970e-affd30dec8ba" />
   <Project Path="Desafio2_DES.BL/Desafio2_DES.BL.csproj" />
   <Project Path="Desafio2_DES.Common/Desafio2_DES.Common.csproj" />
   <Project Path="Desafio2_DES.DAL/Desafio2_DES.DAL.csproj" />
