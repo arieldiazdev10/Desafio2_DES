@@ -6,17 +6,9 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using System.Data;
 using Desafio2_DES.Entities;
+using Desafio2_DES.DAL.Interfaces;
 
 namespace Desafio2_DES.DAL;
-
-public interface IOrganizadorRepository
-{
-    Task<IEnumerable<Organizador>> GetAllAsync();
-    Task<Organizador?> GetByIdAsync(int id);
-    Task<int> CreateAsync(Organizador organizador);
-    Task<bool> UpdateAsync(Organizador organizador);
-    Task<bool> DeleteAsync(int id);
-}
 
 public class OrganizadorRepository : IOrganizadorRepository
 {
