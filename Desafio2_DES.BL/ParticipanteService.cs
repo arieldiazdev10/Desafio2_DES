@@ -5,6 +5,8 @@ using AutoMapper;
 using Desafio2_DES.Common;
 using Desafio2_DES.DAL;
 using Desafio2_DES.Entities;
+using Desafio2_DES.BL.Interfaces;
+using Desafio2_DES.DAL.Interfaces;
 
 namespace Desafio2_DES.BL;
 

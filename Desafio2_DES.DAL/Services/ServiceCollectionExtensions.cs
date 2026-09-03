@@ -9,7 +9,11 @@ namespace Desafio2_DES.DAL.Services
         {
             services.AddTransient<IDatabaseRepository, DatabaseRepository>();
             services.AddTransient<IEventoRepository, EventoRepository>();
+            services.AddTransient<IParticipanteRepository, ParticipanteRepository>(); // ← agregar
+            services.AddTransient<IOrganizadorRepository, OrganizadorRepository>();   // ← agregar
+
             return services;
         }
     }
 }
+

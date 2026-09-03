@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Desafio2_DES.Entities;
 
 namespace Desafio2_DES.DAL.Interfaces;
 
