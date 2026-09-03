@@ -21,6 +21,13 @@ namespace Desafio2_DES
             builder.Services.AddRepositoryConnector();
             builder.Services.AddServiceConnector();
 
+            // Redis Cache
+            builder.Services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = builder.Configuration.GetConnectionString("Redis");
+                options.InstanceName = "Desafio2_";
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
