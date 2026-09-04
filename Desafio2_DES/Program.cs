@@ -37,7 +37,10 @@ namespace Desafio2_DES
                 app.MapScalarApiReference();
             }
 
-            app.UseHttpsRedirection();
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseHttpsRedirection();
+            }
 
             app.UseAuthorization();
 

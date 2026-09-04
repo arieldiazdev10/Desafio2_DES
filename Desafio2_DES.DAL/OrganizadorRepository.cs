@@ -16,7 +16,9 @@ public class OrganizadorRepository : IOrganizadorRepository
 
     public OrganizadorRepository(IConfiguration configuration)
     {
-        _connectionString = configuration.GetConnectionString("DefaultConnection")!;
+        _connectionString = configuration["AppSettings:ConnectionString"]
+            ?? throw new InvalidOperationException(
+                "No se ha configurado 'AppSettings:ConnectionString'.");
     }
 
     private IDbConnection CreateConnection() => new SqlConnection(_connectionString);
